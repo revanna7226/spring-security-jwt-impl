@@ -11,8 +11,8 @@
 > GitHub Link: [Source Code](https://github.com/ali-bouali/spring-boot-3-jwt-security)
 
 ## Architecture
-![Architecture Diagram](/images/JWT_Impl_ArchitectureDiagram.png)
-![Token Validation Mechanism](/images/ValidatingTokens.png)
+![Architecture Diagram](images/JWT_Impl_ArchitectureDiagram.png)
+![Token Validation Mechanism](images/ValidatingTokens.png)
 ![Database Structure](images/DB_User_Token.png)
 
 ### Spring Initializr Project URL:
