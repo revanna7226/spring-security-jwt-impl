@@ -1,6 +1,5 @@
 package com.revs.jwtsecurity.auth;
 
-import com.revs.jwtsecurity.AuthService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

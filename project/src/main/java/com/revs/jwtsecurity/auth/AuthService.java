@@ -1,8 +1,5 @@
-package com.revs.jwtsecurity;
+package com.revs.jwtsecurity.auth;
 
-import com.revs.jwtsecurity.auth.AuthRequest;
-import com.revs.jwtsecurity.auth.AuthResponse;
-import com.revs.jwtsecurity.auth.RegisterRequest;
 import com.revs.jwtsecurity.config.JwtService;
 import com.revs.jwtsecurity.user.Role;
 import com.revs.jwtsecurity.user.User;
