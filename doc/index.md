@@ -39,3 +39,28 @@ JWT is three parts -> Header(Algorithm and Token Type) + Payload(Claims) + Signa
 
 There are three types of claims -> registered claims, public claims and private claims.
 
+## Open API/Swagger UI Implementation
+Swagger API: used to document REST API Applications
+
+click [here](https://springdoc.org/) to visit OpenAPI official Documetation
+
+Add below dependency to your pom.xml to generate api documentation
+
+```xml
+<dependency>
+    <groupId>org.springdoc</groupId>
+    <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+    <version>2.3.0</version>
+</dependency>
+<!-- Add the below dependency to avaid validation exceptions-->
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-validation</artifactId>
+</dependency>
+```
+
+API Documentation will be available at http://localhost:8080/swagger-ui/index.html
+
+
+
+
