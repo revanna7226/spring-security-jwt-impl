@@ -10,7 +10,7 @@
 
 > GitHub Link: [Source Code](https://github.com/ali-bouali/spring-boot-3-jwt-security)
 
-## Architecture
+### Architecture
 ![Architecture Diagram](images/JWT_Impl_ArchitectureDiagram.png)
 ![Token Validation Mechanism](images/ValidatingTokens.png)
 ![Database Structure](images/DB_User_Token.png)
@@ -39,7 +39,17 @@ JWT is three parts -> Header(Algorithm and Token Type) + Payload(Claims) + Signa
 
 There are three types of claims -> registered claims, public claims and private claims.
 
+## JWT Logout Meachnism
+Youtube Link: [How to Logout from Spring Security - JWT](https://youtu.be/0GGFZdYe-FY?si=i1NLjeOsvWLREIrX)
+
+## JWT Refresh Token
+YouTube Link: [Spring Security - Refresh token](https://youtu.be/EsVybSJr7zU?si=ibbelcO4z1Iu-w6t)
+
+## Roles and Permissions Based Authorization
+YouTube Link: [Spring boot 3 & Spring security 6 - Roles and Permissions Based Authorization Explained!](https://youtu.be/mq5oUXcAXL4?si=HD8MCfBBHoCyQ8Ag)
+
 ## Open API/Swagger UI Implementation
+YouTube Link: [Spring boot 3 - OpenApi Documentation | Swagger UI](https://youtu.be/2o_3hjUPAfQ?si=ULpVHw843ds_b6QR)
 Swagger API: used to document REST API Applications
 
 click [here](https://springdoc.org/) to visit OpenAPI official Documetation
@@ -60,6 +70,9 @@ Add below dependency to your pom.xml to generate api documentation
 ```
 
 API Documentation will be available at http://localhost:8080/swagger-ui/index.html
+
+## JPA Auditing for Spring boot and Spring Security
+YouTube Link: [JPA Auditing for Spring boot and Spring Security](https://youtu.be/lGULtrZqk-c?si=8vz2aWinArg8u5-G)
 
 
 

@@ -1,9 +1,11 @@
 package com.revs.jwtsecurity.config;
 
+import com.revs.jwtsecurity.auditing.ApplicationAuditAware;
 import com.revs.jwtsecurity.user.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.data.domain.AuditorAware;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
@@ -49,6 +51,12 @@ public class AppConfig {
     @Bean
     public AuthenticationManager authenticationManager(AuthenticationConfiguration authConfig) throws Exception {
         return authConfig.getAuthenticationManager();
+    }
+
+    // For JPA Auditing
+    @Bean(name = "auditorAwareBean")
+    public AuditorAware<Integer> auditorAware() {
+        return new ApplicationAuditAware();
     }
 
 }
