@@ -50,6 +50,7 @@ YouTube Link: [Spring boot 3 & Spring security 6 - Roles and Permissions Based A
 
 ## Open API/Swagger UI Implementation
 YouTube Link: [Spring boot 3 - OpenApi Documentation | Swagger UI](https://youtu.be/2o_3hjUPAfQ?si=ULpVHw843ds_b6QR)
+
 Swagger API: used to document REST API Applications
 
 click [here](https://springdoc.org/) to visit OpenAPI official Documetation
@@ -73,6 +74,9 @@ API Documentation will be available at http://localhost:8080/swagger-ui/index.ht
 
 ## JPA Auditing for Spring boot and Spring Security
 YouTube Link: [JPA Auditing for Spring boot and Spring Security](https://youtu.be/lGULtrZqk-c?si=8vz2aWinArg8u5-G)
+
+## Spring security | Change password
+YouTube Link: [Spring security | Change password](https://youtu.be/kpLpFpQUGv4?si=VGONJzYp9rfJIMt2)
 
 
 
