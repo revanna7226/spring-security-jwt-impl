@@ -16,17 +16,3 @@ services:
 
 volumes:
   postgres:
-
-
-    environment:
-      POSTGRES_USER: username
-      POSTGRES_PASSWORD: password
-
-      POSTGRES_DB: spring_app_db
-    volumes:
-      - postgres:/data/postgres
-    ports:
-      - "5432:5432"
-    restart: unless-stopped
-volumes:
-  postgres:
