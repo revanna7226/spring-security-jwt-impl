@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: SpringSecurityAsymetricEncryption
+  config:
+    import: optional:file:.env[.properties]
+  datasource:
+    url: jdbc:postgresql://${DB_HOST}:${DB_PORT}/${DB_NAME}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+---
+app:
+  security:
+    jwt:
+      privateKeyPath: keys/local-only/private_key.pem
+      PublicKeyPath: keys/local-only/public_key.pem
+      tokenExpiration: 86400000 # 24 Hours for local, 15 minutes for PROD
+      refreshExpiration: 604800000 # 7 Days
+    validation:
+      disposable-email: 10minutemail,20minutemail,33mail,5ymail,anonbox,guerrillamail,mailinator,maildrop,mailnesia,moakt,my10minutemail,throwawaymail,trashmail,temp-mail,tempmail,truemail,yopmail
+
+
